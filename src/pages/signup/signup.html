@@ -1,0 +1,98 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Nueva cuenta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div class="splash-logo"></div>
+    
+    
+        <ion-list>
+        
+           
+            <ion-item>
+
+                <ion-label stacked>Correo electrónico</ion-label>
+                <ion-input type="email" [(ngModel)]="email" name="email" placeholder="algo@algo.com"></ion-input>
+              </ion-item>
+    
+              <ion-item>
+                <ion-label stacked>Contraseña</ion-label>
+                <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+              </ion-item>
+    
+      
+    
+       
+    
+          <ion-item>
+            <ion-label stacked>Nombre</ion-label>
+            <ion-input type="text" [(ngModel)]="nombre" name="nombre"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label stacked>Apellido Paterno</ion-label>
+            <ion-input type="text" [(ngModel)]="apellidoPaterno" name="apellidoPaterno"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>Apellido Materno</ion-label>
+            <ion-input type="text" [(ngModel)]="apellidoMaterno" name="apellidoMaterno"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label stacked>País</ion-label>
+            <ion-input type="text" [(ngModel)]="pais" name="pais"></ion-input>
+          </ion-item>
+
+          
+          <ion-item>
+            <ion-label stacked>Ciudad</ion-label>
+            <ion-input type="text" [(ngModel)]="ciudad" name="ciudad"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>Estado</ion-label>
+            <ion-input type="text" [(ngModel)]="estado" name="estado"></ion-input>
+          </ion-item>
+          
+          <ion-item >
+              <ion-label stacked>Número telefonico</ion-label>
+              <ion-input type="text" [(ngModel)]="telefono" name="telefono" placeholder="7222310977" required="required"></ion-input>
+            </ion-item>
+      
+         
+        
+            <ion-item>
+              <ion-label stacked>Tipo de Usuario:</ion-label>
+              <ion-select [(ngModel)]="tipoUsuario" id="tipo" name="select">
+                <ion-option  value="u">Normal</ion-option> 
+                <ion-option value="v" >Veterinario</ion-option>
+                <ion-option value="e" >Establecimiento</ion-option>
+              
+              </ion-select>
+            <!--  <ion-input formControlName="tipo" id="tipo" type="text" placeholder="Público o privado"></ion-input> -->
+            
+    </ion-item>
+           
+           
+           
+    
+          <div padding text-center>
+            <button ion-button color="danger" round (click)="doSignup()" >REGISTRARSE</button>
+          </div>
+    
+        </ion-list>
+
+    
+
+</ion-content>
